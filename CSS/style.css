@@ -1,0 +1,96 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Cormorant Garamond", serif;
+}
+
+body {
+  /*background: rgba(222, 235, 247, 1);*/
+  text-align: center;
+}
+img {
+  position: absolute;
+  opacity: 0.3;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: auto;
+}
+
+#title {
+  margin-top: 30px;
+  text-shadow: gray 5px 4px 4px;
+}
+#description {
+  font-size: 20px;
+}
+
+#survey-form {
+  position: relative;
+  z-index: 2;
+  display: block;
+  margin: 30px auto;
+  max-width: 550px;
+  min-height: 40%;
+  background: rgb(249, 244, 238);
+  border: 3px solid rgb(246, 222, 247);
+  border-radius: 30px;
+  border-style: ridge;
+  padding-top: 35px;
+  padding-bottom: 30px;
+  line-height: 30px;
+}
+
+.container label {
+  display: inline-block;
+  width: 50px;
+  text-align: left;
+}
+.container input {
+  width: 250px;
+  text-align: center;
+}
+
+.container select {
+  width: 250px;
+  text-align: center;
+}
+
+.dropdown {
+  display: inline-block;
+  text-align: left;
+  margin-top: 20px;
+}
+.radio {
+  margin-top: 15px;
+}
+
+.radio label {
+  width: 100px;
+  text-align: left;
+}
+.radio input {
+  width: 30px;
+}
+.container-sauce {
+  line-height: 15px;
+  font-size: 14px;
+  text-align: center;
+}
+.container-sauce label {
+  width: 50px;
+  text-align: left;
+}
+.container-sauce input {
+  vertical-align: middle;
+  width: 60px;
+}
+.comment {
+  width: 350px;
+}
+.comment textarea {
+  padding: 5px;
+  width: 350px;
+  min-height: 80px;
+  resize: vertical;
+}

@@ -1,0 +1,103 @@
+<html>
+  <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+  <head id="header">
+    <link rel="stylesheet" href="./CSS/style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond"
+      rel="stylesheet"
+    />
+    <h1 id="title">inie-mini's Restaurant</h1>
+    <p id="description">Please take a moment to fill in the form.</p>
+  </head>
+  <body>
+    <img
+      src="https://eatforum.org/content/uploads/2018/05/table_with_food_top_view_900x700.jpg"
+      alt=""
+    />
+
+    <form id="survey-form">
+      <div class="container">
+        <div class="name">
+          <label for="name" id="name-label">Name</label>
+          <input
+            class="form-control"
+            type="text"
+            id="name"
+            placeholder="Please enter your name"
+            required
+          />
+        </div>
+        <div class="email">
+          <label for="email" id="email-label">Email</label>
+          <input
+            class="form-control"
+            type="email"
+            id="email"
+            placeholder="Enter a valid email"
+            required
+          />
+        </div>
+        <div class="age">
+          <label for="number" id="number-label">Age</label>
+          <input
+            class="form-control"
+            type="number"
+            min="10"
+            max="99"
+            id="number"
+            placeholder="What's your age?"
+            required
+          />
+        </div>
+        <div class="dropdown" id="dropdown">
+          <label for="dropdown">Steak</label>
+          <select type="dropdown" required>
+            <option name="steak" selected disabled>
+              <label for="steak" id="label-steak"
+                >How would you like your steak?</label
+              >
+            </option>
+            <option value="rare">Rare</option>
+            <option value="medium">Medium</option>
+            <option value="well-done">Well done</option>
+          </select>
+        </div>
+        <div class="radio" name="radio-buttons" id="radio">
+          <p>Do you want fries with your dish?</p>
+          <label class="label-inline">
+            <input type="radio" name="fries" value="yes" checked />Yes
+          </label>
+          <label class="label-inline">
+            <input type="radio" name="fries" value="no" />No
+          </label>
+        </div>
+        <div class="sauces">
+          <p>Please select your sauces to include:</p>
+          <container class="container-sauce">
+            <div>
+              <label for="sauce1">Mayonaise</label>
+              <input type="checkbox" name="sauce1" value="mayonaise" />
+            </div>
+            <div>
+              <label for="sauce2">Garlic</label>
+              <input type="checkbox" name="sauce2" value="garlic" />
+            </div>
+            <div>
+              <label for="sauce3">Peppersauce</label>
+              <input type="checkbox" name="sauce3" value="mayonaise" />
+            </div>
+            <div>
+              <label for="sauce4">Ketchup</label>
+              <input type="checkbox" name="sauce4" value="ketchup" />
+            </div>
+          </container>
+        </div>
+        <div class="comment">
+          <p>Allergy information or other comments:</p>
+          <textarea></textarea>
+        </div>
+        <input type="submit" id="submit" value="Submit Form" />
+      </div>
+    </form>
+  </body>
+</html>
